@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="59dp" android:id="@+id/Title" android:background="#DDC9C9">
+            <TextView
+                    android:text="Shannon1948.pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/Title_text" android:layout_weight="1"
+                    android:textSize="30sp" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" android:id="@+id/pages" android:layout_weight="1"
+            />
+        </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp" android:id="@+id/Buttons" android:background="#DDC9C9">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button5"
+                    android:layout_alignEnd="@id/button3" android:layout_marginEnd="-588dp"
+                    android:onClick="onannotate" android:drawableTop="@drawable/ic_gesture_black_24dp"/>
+            <Button
+                    android:text="PageUp"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content" android:id="@+id/button3" android:onClick="pageup"
+                    android:drawableTop="@drawable/ic_arrow_back_black_24dp" android:textSize="0dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp" android:id="@+id/button4"
+                    android:layout_alignLeft="@id/button3" android:layout_marginLeft="94dp" android:onClick="pagedown"
+                    android:drawableTop="@drawable/ic_arrow_forward_black_24dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button"
+                    android:layout_alignLeft="@id/button5" android:layout_marginLeft="101dp"
+                    android:onClick="onhighlight" android:drawableTop="@drawable/ic_highlight_black_24dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button2"
+                    android:layout_alignLeft="@id/button5" android:layout_marginLeft="209dp" android:onClick="onerase"
+                    android:drawableTop="@drawable/ic_delete_sweep_black_24dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button6"
+                    android:layout_alignLeft="@id/button2" android:layout_marginLeft="-552dp" android:onClick="Undo"
+                    android:drawableTop="@drawable/ic_undo_black_24dp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button7"
+                    android:layout_alignLeft="@id/button6" android:layout_marginLeft="108dp" android:onClick="Redo"
+                    android:drawableTop="@drawable/ic_redo_black_24dp"/>
+        </RelativeLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1183dp" android:id="@+id/PDF">
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
